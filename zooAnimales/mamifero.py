@@ -13,3 +13,13 @@ class Mamifero(Animal):
         self._patas = patas
         Mamifero._listado.append(self)
         Animal()
+    
+    def setPelaje(self, pelaje):
+        self._pelaje = pelaje
+    def setPatas(self, patas):
+        self._patas = patas
+    
+    def getPelaje(self):
+        return self._pelaje
+    def getPatas(self):
+        return self._patas
