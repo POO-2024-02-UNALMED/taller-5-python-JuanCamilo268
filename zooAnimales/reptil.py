@@ -28,3 +28,6 @@ class Reptil(Animal):
     def cantidadReptiles(cls):
         return len(cls._listado)
     
+    def movimiento(self):
+        return "reptar"
+    
