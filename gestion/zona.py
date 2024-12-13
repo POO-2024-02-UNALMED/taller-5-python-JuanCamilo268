@@ -22,3 +22,6 @@ class Zona:
     
     def cantidadAnimales(self):
         return len(self._animales)
+    
+    def __str__(self):
+        return self._nombre
