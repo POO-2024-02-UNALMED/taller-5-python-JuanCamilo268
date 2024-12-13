@@ -1,3 +1,9 @@
+from mamifero import Mamifero
+from ave import Ave
+from reptil import Reptil
+from pez import Pez
+from anfibio import Anfibio
+
 class Animal:
     _totalAnimales = 0
     def __init__(self, nombre = None, edad = None, habitat = None, genero = None, zona = None):
@@ -30,4 +36,16 @@ class Animal:
     def getZona(self):
         return self._zona
     
+    @classmethod
+    def totalPorTipo(cls):
+        return "Mamiferos : " + Mamifero.cantidadMamiferos() + "\nAves : " + Ave.cantidadAves() + "\nReptiles : " + Reptil.cantidadReptiles() + "\nPeces : " + Pez.cantidadPeces() + "\nAnfibios : " + Anfibio.cantidadAnfibios
+    
+    def __str__(self):
+        if self._zona != None:
+            return "Mi nombre es " + self._nombre + ", tengo una edad de " + self._edad + ", habito en " + self._habitat + " y mi genero es " + self._genero + "la zona en la que me ubico es " + self._zona + ", en el " + self._zona.getZoo()
+        else:
+            return "Mi nombre es " + self._nombre + ", tengo una edad de " + self._edad + ", habito en " + self._habitat + " y mi genero es " + self._genero  
+    
+    def movimiento(self):
+        return "desplazarse"
     
