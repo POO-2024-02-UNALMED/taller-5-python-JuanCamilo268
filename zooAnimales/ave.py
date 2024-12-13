@@ -12,3 +12,9 @@ class Ave(Animal):
         self._colorPlumas = plumas
         Ave._listado.append(self)
         Animal()
+
+    def setColorPlumas(self, color):
+        self._colorPlumas = color
+    
+    def getColorPlumas(self):
+        return self._colorPlumas
