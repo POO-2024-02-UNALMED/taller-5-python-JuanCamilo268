@@ -23,3 +23,8 @@ class Anfibio(Animal):
         return self._colorPiel
     def getVenenoso(self):
         return self._venenoso
+    
+    @classmethod
+    def cantidadAnfibios(cls):
+        return len(cls._listado)
+    
