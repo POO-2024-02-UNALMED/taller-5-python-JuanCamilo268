@@ -23,3 +23,8 @@ class Reptil(Animal):
         return self._colorEscamas
     def getLargoCola(self):
         return self._largoCola
+    
+    @classmethod
+    def cantidadReptiles(cls):
+        return len(cls._listado)
+    
