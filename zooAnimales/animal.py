@@ -29,3 +29,5 @@ class Animal:
         return self._genero
     def getZona(self):
         return self._zona
+    
+    
