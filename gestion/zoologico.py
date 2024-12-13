@@ -15,4 +15,12 @@ class Zoologico:
         return self._ubicacion
     
     def cantidadTotalAnimales(self):
+        total = 0
         for zona in self._zonas:
+            x = len(zona.getAnimales())
+            total += x
+        return total
+    
+    def agregarZonas(self, zona):
+        self._zonas.append(zona)
+        zona.setZoo(self)
