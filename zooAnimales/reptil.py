@@ -13,3 +13,13 @@ class Reptil(Animal):
         self._largoCola = largo
         Reptil._listado.append(self)
         Animal()
+    
+    def setColorEscamas(self, color):
+        self._colorEscamas = color
+    def setLargoCola(self, largo):
+        self._largoCola = largo
+    
+    def getColorEscamas(self):
+        return self._colorEscamas
+    def getLargoCola(self):
+        return self._largoCola
