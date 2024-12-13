@@ -23,3 +23,8 @@ class Pez(Animal):
         return self._cantidadAletas
     def getCantidadAletas(self):
         return self._cantidadAletas
+    
+    @classmethod
+    def cantidadPeces(cls):
+        return len(cls._listado)
+    
