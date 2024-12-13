@@ -13,3 +13,13 @@ class Pez(Animal):
         self._cantidadAletas = cantidad
         Pez._listado.append(self)
         Animal()
+    
+    def setColorEscamas(self, color):
+        self._colorEscamas = color
+    def setCantidadAletas(self, aletas):
+        self._cantidadAletas = aletas
+
+    def getColorEscamas(self):
+        return self._cantidadAletas
+    def getCantidadAletas(self):
+        return self._cantidadAletas
