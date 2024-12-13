@@ -23,3 +23,8 @@ class Mamifero(Animal):
         return self._pelaje
     def getPatas(self):
         return self._patas
+    
+    @classmethod
+    def cantidadMamiferos(cls):
+        return len(cls._listado)
+    
