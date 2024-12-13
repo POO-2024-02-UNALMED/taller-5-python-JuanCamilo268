@@ -24,3 +24,6 @@ class Zoologico:
     def agregarZonas(self, zona):
         self._zonas.append(zona)
         zona.setZoo(self)
+
+    def __str__(self):
+        return self._nombre
