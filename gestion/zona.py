@@ -6,8 +6,13 @@ class Zona:
     
     def setNombre(self, nombre):
         self._nombre = nombre
+    def setZoo(self, zoo):
+        if self._zoo[0] == None:
+            self._zoo[0] = zoo
 
     def getNombre(self):
         return self._nombre
     def getZoo(self):
         return self._zoo[0]
+    def getAnimales(self):
+        return self._animales
