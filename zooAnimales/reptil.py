@@ -12,7 +12,7 @@ class Reptil(animal.Animal):
         self._colorEscamas = color
         self._largoCola = largo
         Reptil._listado.append(self)
-        Animal()
+        super()
     
     def setColorEscamas(self, color):
         self._colorEscamas = color
