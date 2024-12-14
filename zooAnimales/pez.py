@@ -20,7 +20,7 @@ class Pez(Animal):
         self._cantidadAletas = aletas
 
     def getColorEscamas(self):
-        return self._cantidadAletas
+        return self._colorEscamas
     def getCantidadAletas(self):
         return self._cantidadAletas
     
