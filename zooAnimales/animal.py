@@ -49,4 +49,4 @@ class Animal:
         return "desplazarse"
     
     def toString(self):
-        return self.__str__
+        return self.__str__()
