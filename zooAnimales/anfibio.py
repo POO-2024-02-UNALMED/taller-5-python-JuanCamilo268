@@ -31,11 +31,11 @@ class Anfibio(Animal):
     def movimiento(self):
         return "saltar"
     
-    def crearRana(self, nombre, edad, genero):
+    def crearRana(nombre, edad, genero):
         rene = Anfibio(nombre, edad, "selva", genero, "rojo", True)
         Anfibio.ranas += 1
         return rene
-    def crearSalamandra(self, nombre, edad, genero):
+    def crearSalamandra(nombre, edad, genero):
         chorizard = Anfibio(nombre, edad, "selva", genero, "negro y amarillo", False)
         Anfibio.salamandras += 1
         return chorizard
