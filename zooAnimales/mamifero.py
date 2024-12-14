@@ -12,7 +12,7 @@ class Mamifero(animal.Animal):
         self._pelaje = pelaje
         self._patas = patas
         Mamifero._listado.append(self)
-        Animal()
+        super()
     
     def setPelaje(self, pelaje):
         self._pelaje = pelaje
