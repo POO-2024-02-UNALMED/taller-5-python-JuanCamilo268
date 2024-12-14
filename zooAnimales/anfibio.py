@@ -12,7 +12,7 @@ class Anfibio(animal.Animal):
         self._colorPiel = color
         self._venenoso = veneno
         Anfibio._listado.append(self)
-        Animal()
+        super()
     
     def setColorPiel(self, color):
         self._colorPiel = color
