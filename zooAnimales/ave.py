@@ -11,7 +11,7 @@ class Ave(animal.Animal):
         self._genero = genero
         self._colorPlumas = plumas
         Ave._listado.append(self)
-        Animal()
+        super()
 
     def setColorPlumas(self, color):
         self._colorPlumas = color
