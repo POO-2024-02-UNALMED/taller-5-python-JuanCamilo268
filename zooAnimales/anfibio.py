@@ -1,6 +1,6 @@
-from zooAnimales.animal import Animal
+import animal
 
-class Anfibio(Animal):
+class Anfibio(animal.Animal):
     _listado = []
     ranas = 0
     salamandras = 0
