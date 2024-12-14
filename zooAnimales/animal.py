@@ -48,3 +48,5 @@ class Animal:
     def movimiento(self):
         return "desplazarse"
     
+    def toString(self):
+        return self.__str__
