@@ -35,8 +35,4 @@ class Ave(Animal):
         Ave.aguilas += 1
         return murica
     
-    def __str__(self):
-        if self._zona != None:
-            return "Mi nombre es {self._niombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero} la zona en la que me ubico es {self._zona}, en el " + str(self._zona.getZoo())
-        else:
-            return "Mi nombre es {self._niombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
+    
