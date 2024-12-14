@@ -31,11 +31,11 @@ class Reptil(Animal):
     def movimiento(self):
         return "reptar"
     
-    def crearIguana(self, nombre, edad, genero):
+    def crearIguana(nombre, edad, genero):
         mariajuana = Reptil(nombre, edad, "humedal", genero, "verde", 3)
         Reptil.iguanas += 1
         return mariajuana
-    def crearSerpiente(self, nombre, edad, genero):
+    def crearSerpiente(nombre, edad, genero):
         morales = Reptil(nombre, edad, "jungla", genero, "blanco", 1)
         Reptil.serpientes += 1
         return morales
