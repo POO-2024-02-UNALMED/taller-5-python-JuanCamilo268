@@ -37,13 +37,13 @@ class Animal:
         from .reptil import Reptil
         from .pez import Pez
         from .anfibio import Anfibio
-        return "Mamiferos : " + Mamifero.cantidadMamiferos() + "\nAves : " + Ave.cantidadAves() + "\nReptiles : " + Reptil.cantidadReptiles() + "\nPeces : " + Pez.cantidadPeces() + "\nAnfibios : " + Anfibio.cantidadAnfibios
+        return "Mamiferos : " + str(Mamifero.cantidadMamiferos()) + "\nAves : " + str(Ave.cantidadAves()) + "\nReptiles : " + str(Reptil.cantidadReptiles()) + "\nPeces : " + str(Pez.cantidadPeces()) + "\nAnfibios : " + str(Anfibio.cantidadAnfibios())
     
     def __str__(self):
         if self._zona != None:
-            return "Mi nombre es " + self._nombre + ", tengo una edad de " + self._edad + ", habito en " + self._habitat + " y mi genero es " + self._genero + "la zona en la que me ubico es " + self._zona + ", en el " + self._zona.getZoo()
+            return "Mi nombre es {self._niombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero} la zona en la que me ubico es {self._zona}, en el " + str(self._zona.getZoo())
         else:
-            return "Mi nombre es " + self._nombre + ", tengo una edad de " + self._edad + ", habito en " + self._habitat + " y mi genero es " + self._genero  
+            return "Mi nombre es {self._niombre}, tengo una edad de {self._edad}, habito en {self._habitat} y mi genero es {self._genero}"
     
     def movimiento(self):
         return "desplazarse"
